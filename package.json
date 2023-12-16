@@ -1,0 +1,16 @@
+{
+  "name": "demyan_dzyamba_master_thesis",
+  "author": "Demyan Dzyamba",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "main": "index.js",
+
+  "scripts": {
+    "cy:open:cypress": "npx cypress open",
+    "cy:run:cypress": "npx cypress run"
+  },
+  "dependencies": {
+    "cypress": "^13.6.1"
+  }
+}
