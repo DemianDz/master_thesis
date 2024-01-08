@@ -8,4 +8,4 @@
       steps:
          - uses: actions/checkout@v3.1.0
          - name: Step name
-           run: npm run cy:run:cypress
+           run: cd cypress && npm i && npm run cy:run:cypress
