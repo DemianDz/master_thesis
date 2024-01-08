@@ -1,11 +1,9 @@
   name: Cypress tests
-  on:
-    schedule:
-         - cron: '0 18 * * 0,1,2,3,4'
+  on: push
   jobs:
     cypress-tests:
       runs-on: ubuntu-latest
       steps:
          - uses: actions/checkout@v3.1.0
-         - name: Step name
+         - name: Smoke tests
            run: npm run cy:run:cypress
