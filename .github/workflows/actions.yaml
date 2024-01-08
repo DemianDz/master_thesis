@@ -1,7 +1,5 @@
-  name: Hello World
-  on:
-    schedule:
-         - cron: '0 18 * * 0,1,2,3,4'
+  name: Cypress tests
+  on: push
   jobs:
     cypress-tests:
       runs-on: ubuntu-latest
@@ -9,3 +7,4 @@
          - uses: actions/checkout@v3.1.0
          - name: Step name
            run: cd cypress && npm i && npm run cy:run:cypress
+
