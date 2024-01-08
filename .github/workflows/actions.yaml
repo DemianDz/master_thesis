@@ -1,4 +1,4 @@
-  name: Hello World
+  name: Cypress tests
   on:
     schedule:
          - cron: '0 18 * * 0,1,2,3,4'
