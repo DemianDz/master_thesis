@@ -3,9 +3,9 @@
     schedule:
          - cron: '0 18 * * 0,1,2,3,4'
   jobs:
-  cypress_tests:
-    runs-on: ubuntu-latest
-    steps:
-       - uses: actions/checkout@v3.1.0
-       - name: Step name
-         run: npm run cy:run:cypress
+    cypress-tests:
+      runs-on: ubuntu-latest
+      steps:
+         - uses: actions/checkout@v3.1.0
+         - name: Step name
+           run: npm run cy:run:cypress
